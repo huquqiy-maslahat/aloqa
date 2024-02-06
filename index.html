@@ -39,7 +39,7 @@
           <textarea  type="text" id="aloqa" placeholder="Savolingizni shu yerga kiriting..."></textarea>
         </div>
         <div class="input-box message-box">
-          <a href="savol-berish-kir/index.html">текст ссылки</a>
+          <a id="ssilka" href="savol-berish-kir/index.html">текст ссылки</a>
         </div>
         <div class="button">
           <input type="button" id="yuborish" value="Yuborish" >
@@ -55,6 +55,7 @@
 
     buy.addEventListener("click", ()=> {
       document.getElementById("aloqa").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name
+      document.getElementById("ssilka").style.display = "none"
     })
   </script>
 </body>
